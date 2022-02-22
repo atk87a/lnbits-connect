@@ -1,0 +1,6 @@
+services:
+  lnbits_connect.event_subscriber:
+    class: Drupal\lnbits_connect\EventSubscriber\LnbitsConnectSubscriber
+    arguments: ['@messenger']
+    tags:
+      - { name: event_subscriber }

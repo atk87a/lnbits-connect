@@ -1,0 +1,6 @@
+lnbits_connect.settings_form:
+  title: lnbits connect
+  description: Configure lnbits connect.
+  parent: system.admin_config_system
+  route_name: lnbits_connect.settings_form
+  weight: 10

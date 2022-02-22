@@ -1,0 +1,30 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.profile.lightning_wallet.field_lnbits_invoice_key
+    - field.field.profile.lightning_wallet.field_lnbits_url
+    - profile.type.lightning_wallet
+id: profile.lightning_wallet.default
+targetEntityType: profile
+bundle: lightning_wallet
+mode: default
+content:
+  field_lnbits_invoice_key:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_lnbits_url:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  is_default: true

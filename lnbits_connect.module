@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for lnbits connect module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+/**
+ * Implements hook_entity_base_field_info().
+ */

@@ -1,0 +1,4 @@
+administer lnbits_connect configuration:
+  title: 'Administer lnbits_connect configuration'
+  description: 'Optional description.'
+  restrict access: true

@@ -1,0 +1,6 @@
+name: lnbits connect
+type: module
+description: Add a lnbits wallet to drupal
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9

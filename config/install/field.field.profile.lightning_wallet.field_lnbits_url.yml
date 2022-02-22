@@ -1,0 +1,18 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_lnbits_url
+    - profile.type.lightning_wallet
+id: profile.lightning_wallet.field_lnbits_url
+field_name: field_lnbits_url
+entity_type: profile
+bundle: lightning_wallet
+label: 'LNbits URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

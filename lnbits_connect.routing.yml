@@ -1,0 +1,15 @@
+lnbits_connect.example:
+  path: '/lnbits-connect/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\lnbits_connect\Controller\LnbitsConnectController::build'
+  requirements:
+    _permission: 'access content'
+
+lnbits_connect.settings_form:
+  path: '/admin/config/system/lnbits-connect'
+  defaults:
+    _title: 'lnbits connect settings'
+    _form: 'Drupal\lnbits_connect\Form\SettingsForm'
+  requirements:
+    _permission: 'administer lnbits_connect configuration'
