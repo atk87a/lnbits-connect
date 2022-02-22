@@ -1,8 +1,8 @@
-lnbits_connect.example:
-  path: '/lnbits-connect/example'
+lnbits_connect.modal:
+  path: '/lnbits-connect/modal'
   defaults:
-    _title: 'Example'
-    _controller: '\Drupal\lnbits_connect\Controller\LnbitsConnectController::build'
+    _title: 'lnbits invoice'
+    _controller: '\Drupal\lnbits_connect\Controller\LnbitsConnectController::modal'
   requirements:
     _permission: 'access content'
 

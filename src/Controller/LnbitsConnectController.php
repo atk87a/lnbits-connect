@@ -2,6 +2,9 @@
 
 namespace Drupal\lnbits_connect\Controller;
 
+
+use Drupal\Core\Ajax\AjaxResponse;
+use Drupal\Core\Ajax\OpenModalDialogCommand;
 use Drupal\Core\Controller\ControllerBase;
 
 /**
@@ -12,14 +15,15 @@ class LnbitsConnectController extends ControllerBase {
   /**
    * Builds the response.
    */
-  public function build() {
-
-    $build['content'] = [
-      '#type' => 'item',
-      '#markup' => $this->t('It works!'),
+public function modal() {
+    $options = [
+      'dialogClass' => 'popup-dialog-class',
+      'width' => '50%',
     ];
-
-    return $build;
+    $response = new AjaxResponse();
+    $response->addCommand(new OpenModalDialogCommand(t('Bitcoin Lightning Invoice'), t('Here we need to see the invoice as hash and QR Code. Maybe the amount need to be set therefore?'), $options));
+    
+    return $response;
   }
 
 }
