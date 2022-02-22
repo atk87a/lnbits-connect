@@ -32,7 +32,7 @@ class ModalBlock extends BlockBase {
     return array(
       '#type' => 'markup',
       '#markup' => Link::fromTextAndUrl(t('get invoice'), $link_url)->toString(),
-      '#attached' => ['library' => ['core/drupal.dialog.ajax']]
+      '#attached' => ['library' => ['core/drupal.dialog.ajax','lnbits_connect/qr_code','lnbits_connect/lnbits_connect']]
     );
   }
 }

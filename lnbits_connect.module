@@ -8,9 +8,12 @@
  * This file is no longer required in Drupal 8.
  * @see https://www.drupal.org/node/2217931
  */
+ 
+ DEFINE('LNBITS_API_BASE_URL', 'https://lnbits.satoshibox.io/');
 
 use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
 /**
  * Implements hook_entity_base_field_info().
  */
+
