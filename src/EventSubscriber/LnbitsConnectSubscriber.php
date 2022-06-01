@@ -55,8 +55,8 @@ class LnbitsConnectSubscriber implements EventSubscriberInterface {
    */
   public static function getSubscribedEvents() {
     return [
-      KernelEvents::REQUEST => ['onKernelRequest'],
-      KernelEvents::RESPONSE => ['onKernelResponse'],
+      // KernelEvents::REQUEST => ['onKernelRequest'],
+      // KernelEvents::RESPONSE => ['onKernelResponse'],
     ];
   }
 
